@@ -1,0 +1,11 @@
+GHIDRA_INSTALL_DIR=/Users/bytedance/Applications/ghidra_12.1.4_PUBLIC \
+JAVA_HOME=/opt/homebrew/Cellar/openjdk@21/21.0.12.1/libexec/openjdk.jdk/Contents/Home \
+GHIDRA_HEADLESS_MAXMEM=10G \
+REA_GHIDRA_DISABLED_ANALYZERS='Windows x86 PE RTTI Analyzer' \
+/Users/bytedance/.npm/_npx/dea9475797100b20/node_modules/.bin/rea analyze \
+/Users/bytedance/Development/rea/1.exe \
+--provider ghidra \
+--snapshot /Users/bytedance/Development/rea/1-ghidra-snapshot.json \
+--format json \
+--full-output \
+--filter-output data.evidence_id,data.subject,data.provider,data.operation,data.confidence,data.limitations
